@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bindu's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Bindu's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Hi, I'm Bindu sai</h1>
+                <p class="subtitle">A creative developer passionate about 
+                    <span class="text-transition" data-first="web development" data-second="software development"></span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="decoration-line"></div>
+            </div>
+            <div class="about-container">
+                <!-- Profile Image Side -->
+                <div class="profile-side">
+                    <div class="profile-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2810/2810667.png" alt="Bindu's Avatar">
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="content-side">
+                    <!-- Tab Navigation -->
+                    <div class="about-tabs">
+                        <button onclick="openTab('aboutMe')" class="about-tab-btn active">About Me</button>
+                        <button onclick="openTab('education')" class="about-tab-btn">Education</button>
+                        <button onclick="openTab('experience')" class="about-tab-btn">Experience</button>
+                        <button onclick="openTab('certifications')" class="about-tab-btn">Certifications</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="aboutMe" class="tabcontent active">
+                        <p>Hello! I'm a passionate web developer with a keen eye for creating beautiful and functional digital experiences. I love turning complex problems into simple, beautiful, and intuitive solutions. My approach combines creativity, technical expertise, and strong problem-solving skills to build responsive and user-friendly websites.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Bindu3sk" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/bindu-sai-kottapally-953468249" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div id="education" class="tabcontent">
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <div class="education-year">2021 - Present</div>
+                                <div class="education-details">
+                                    <h3>B-Tech CSE</h3>
+                                    <div class="institution">SRM University AP</div>
+                                    <div class="grade">CGPA: 7.81/10</div>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-year">2019 - 2021</div>
+                                <div class="education-details">
+                                    <h3>Intermediate in MPC</h3>
+                                    <div class="institution">Sri Chaitanya Junior College</div>
+                                    <div class="grade">Score: 942/1000</div>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-year">2018 - 2019</div>
+                                <div class="education-details">
+                                    <h3>Secondary Education</h3>
+                                    <div class="institution">Velocity High School</div>
+                                    <div class="grade">CGPA: 9.2/10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Experience Content -->
+                    <div id="experience" class="tabcontent">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Fullstack Intern</h3>
+                                <span class="company">Wheels</span>
+                                <span class="duration">June'23 - August'23</span>
+                            </div>
+                            <div class="experience-details">
+                                <ul>
+                                    <li>Designed and developed a website for Wheels startup, a car rental company using frontend web development skills, focusing on user-friendly design.</li>
+                                    <li>Improved online visibility and made it easier for customers to interact with the website through targeted improvements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Content -->
+                    <div id="certifications" class="tabcontent">
+                        <div class="certifications-grid">
+                            <!-- Salesforce Certification -->
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fab fa-salesforce"></i>
+                                </div>
+                                <div class="certification-details">
+                                    <h3>Salesforce Certification</h3>
+                                    <p>Certified in completion of Salesforce Trailhead modules.</p>
+                                    <a href="https://drive.google.com/file/d/1DWtDRUKnR0epcxpeeilBDB6PZZA_fgKm/view?usp=sharing" class="cert-link" target="_blank">
+                                        View Certificate <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- ServiceNow Certification -->
+                            <div class="certification-item">
+                                <div class="certification-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="certification-details">
+                                    <h3>ServiceNow Certification</h3>
+                                    <p>Successfully completed certification requirements for Micro-Certification.</p>
+                                    <a href="https://drive.google.com/file/d/1jV0pmQSKHuCLJCFq6Zx8TAvexDUwTXQR/view?usp=sharing" class="cert-link" target="_blank">
+                                        View Certificate <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="decoration-line"></div>
+            </div>
+            <div class="project-grid">
+                <!-- Watchflix Project -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Watchflix</h3>
+                        <p>A Netflix-inspired streaming platform that showcases trending content and provides personalized recommendations using TMDB API.</p>
+                        <div class="tech-stack">
+                            <span>React.js</span>
+                            <span>TMDB API</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Project -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Bindu's Portfolio</h3>
+                        <p>A digital resume showcasing my skills, projects, and professional journey through an interactive and responsive design.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Project -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Plant Disease Detection</h3>
+                        <span class="project-subtitle">Research Project</span>
+                        <p>AI-powered system using CNN Inception-v3 for accurate plant disease recognition through leaf analysis, achieving 74% accuracy.</p>
+                        <div class="tech-stack">
+                            <span>CNN</span>
+                            <span>Inception-v3</span>
+                            <span>Deep Learning</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2> My Skills</h2>
+                <div class="decoration-line"></div>
+            </div>
+            <div class="skills-container">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Web Technologies -->
+                <div class="skill-category">
+                    <h3>Frameworks & Web Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">DBMS</span>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skill-category">
+                    <h3>Concepts</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Software Development</span>
+                        <span class="skill-tag">Agile Methodology</span>
+                        <span class="skill-tag">SDLC</span>
+                        <span class="skill-tag">Data Science</span>
+                    </div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Tableau</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="decoration-line"></div>
+            </div>
+            <div class="contact-icons">
+                <!-- Gmail -->
+                <a href="mailto:bindu3sk@gmail.com" class="contact-icon">
+                    <i class="far fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/bindu-sai-kottapally-953468249" target="_blank" class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#" class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Bindu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
